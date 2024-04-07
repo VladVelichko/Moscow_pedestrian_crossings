@@ -138,7 +138,7 @@ def pedestrians_involved(jsonfile, la_list, sa_list, da_list):
                     # EN: if a pedestrian was involved | RU: если в ДТП был вовлечён пешеход
                     qu = feature['properties']['datetime']
 
-                    if '2024' in qu:
+                    if '2024' not in qu:
                         # EN: year 2024 was not researched | RU: год 2024 не исследовался
                         coords = feature['geometry']['coordinates']
 
